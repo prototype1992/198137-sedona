@@ -1,12 +1,184 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <head>
+        <meta charset="utf-8">
+        <title>Sedona</title>
+    </head>
 
-  </body>
+    <body>
+        <div class= conteiner-main>
+        <!-- Шапка -->
+            <header class="main-header">
+                <div class="logo">
+                    <a href="index.html" class="logo">Картинка "City of Sedona"</a> 
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li>
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li>
+                            <a href="#">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Основное -->
+            <main class="main-info">
+                <div class="slogan">
+                    <div class="slogan-1"></div> <!-- картинка Welcome to the gorgeous -->
+                    <div class="slogan-2"></div> <!-- картинка Sedona -->
+                    <div class="slogan-3"></div> <!-- картинка Becaus the grand canyon is sucks -->
+                    <!-- возможно, все три картинки надо будет сделать в одной -->
+                </div>
+                <div class="info-title">
+                    <h3>Седона &ndash; небольшой городок в аризоне,<br>
+                        заслуживающий большего!</h3>
+                    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+                </div>
+                <div class="reason-one">
+                    <div class="reason-one-left">
+                        <h3 class="title-w">Настоящий<br>городок</h3>
+                        <p class="reason-number-w">&ndash; №1 &ndash;</p>
+                        <p class="text-w">Седона &ndash; не атракцион для туристов,<br>
+                            там течет своя жизнь</p>
+                    </div>
+                    <div class="reason-one-right">
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
+                    </div>
+                </div>
+                <div class="description-one">
+                    <div class="description-unit-left">
+                        <div class="description-img">1</div> <!-- картинка -->
+                        <h3 class="title-b"> Жилье</h3>
+                        <p class="text-b">Рекомендуем пожить в настоящем<br>
+                            мотеле, все как в кино!</p>                        
+                    </div>
+                    <div class="description-unit-centre">
+                        <div class="description-img">2</div> <!-- картинка -->
+                        <h3 class="title-b"> Еда</h3>
+                        <p class="text-b">Всегда заказывайте фирменный бургер,<br>
+                            вы не разочаруетесь!</p>                        
+                    </div>
+                    <div class="description-unit-right">
+                        <div class="description-img">3</div> <!-- картинка -->
+                        <h3 class="title-b"> Сувениры</h3>
+                        <p class="text-b">Не только китайского, но и местного<br>
+                            производства!</p>                        
+                    </div>                    
+                </div>                
+                <div class="reason-two">
+                    <div class="reason-two-left">
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
+                    </div>
+                    <div class="reason-two-right">
+                        <h3 class="title-w">Там есть<br>мост дьявола</h3>
+                        <p class="reason-number-w">&ndash; №2 &ndash;</p>
+                        <p class="text-w">Да, по нему можно пройти! Если конечно<br>
+                            вы осмелитесь</p>
+                    </div>
+                </div>
+                <div class="reasons">
+                    <div class="reason-three">
+                        <h3 class="title-b">Небольшая<br>
+                            площадь</h3>
+                        <p class="reason-number-b">&ndash; №3 &ndash;</p>
+                        <p class="text-b">Рекомендуем пожить в настоящем<br>
+                            мотеле, все как в кино!</p>                        
+                    </div>
+                    <div class="reason-four">
+                        <h3 class="title-b">Красивая<br>
+                            дорога</h3>
+                        <p class="reason-number-b">&ndash; №4 &ndash;</p>
+                        <p class="text-b">Ехать в Сидону из Ла-Вегаса совсем<br>
+                            не скучно!</p>                        
+                    </div>
+                    <div class="reason-five">
+                        <h3 class="title-b">Мало<br>
+                            туристов</h3>
+                        <p class="reason-number-b">&ndash; №5 &ndash;</p>
+                        <p class="text-b">Большинство едет в Гранд каньон и<br>
+                            толпится там</p>                        
+                    </div>                  
+                </div> 
+                <div class="booking">
+                    <h2 class="booking-title">Заинтересовались?</h2>
+                    <p>Укажите предполагаемые даты поездки,<br>
+                        и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+                    <div class="btn-booking">
+                        <a href="#">Поиск гостиицы в Седоне</a> <!-- не уверена, чир надо так :( -->
+                    </div>
+                    <form class="form-booking" action="#" method="post">             
+                        <div class="date-row">
+                            <label for="date-start">Дата заезда:</label>
+                            <input type="text" name="date-start" id="date-start" value="24 апреля 2017">
+                            <span class="icon"></span> <!-- картинка календарь... как вызвать сам календарь? -->
+                        </div>
+                        <div class="date-row">
+                            <label for="date-end">Дата выезда:</label>
+                            <input type="text" name="date-end" id="date-end" value="04 июля 2017">
+                            <span class="icon"></span>
+                        </div>
+                        <div class="counters">
+                            <div class="counter-adult">
+                                <label for="counter-numb-adult">Взрослые:</label>
+                                <input type="button" class="button-minus" value="-">
+                                <input type="text" name="counter-numb[]" id="counter-numb-adult" value="2">
+                                <input type="button" class="button-plus" value="+">
+                            </div>
+                            <div class="counter-child">
+                                <label for="counter-numb-child">Дети:</label>
+                                <input type="button" class="button-minus" value="-">
+                                <input type="text" name="counter-numb[]" id="counter-numb-child" value="0">
+                                <input type="button" class="button-plus" value="+">
+                            </div>  
+                        </div>
+                        <div class="btn-submit">
+                            <input type="submit" name="submit-btn" value="Найти">
+                        </div>
+                    </form>
+                </div> 
+            </main>    
+            <!-- Подвал -->
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="footer-hashtag">
+                        <a href="#">#Visitsedona</a>
+                    </div>
+                    <div class="footer-social">
+                        <a class="social-btn social-btn-twit" href="#">Twitter</a>
+                        <a class="social-btn social-btn-fb" href="#">Facebook</a>
+                        <a class="social-btn social-btn-ytb" href="#">YouTube</a>
+                    </div>
+                    <div class="footer-copyright">
+                        <span>Website by</span>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" >
+                            <img src="http://placehold.it/150x100" width="150" height="100" alt="HTMLAcademy">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>    
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
